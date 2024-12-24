@@ -1,0 +1,181 @@
+.request-info-container {
+    border: 1px solid #eaeaea;
+    border-radius: 8px;
+    padding: 20px;
+    background-color: #fff;
+    font-family: "Arial", sans-serif;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .header h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0;
+    color: #333;
+  }
+  
+  .edit-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .edit-button img {
+    width: 18px;
+    height: 18px;
+  }
+  
+  .info-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  
+  .info-item {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .info-item .label {
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 5px;
+  }
+  
+  .info-item .value {
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+  }
+  
+  .requester .value {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .avatar {
+    width: 36px;
+    height: 36px;
+    background-color: #f5d9d5;
+    color: #d9534f;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 14px;
+  }
+  
+  .name {
+    font-weight: 600;
+    color: #333;
+  }
+  
+  .designation {
+    font-size: 12px;
+    color: #888;
+  }
+  
+    
+    .items-section {
+        margin-top: 20px;
+      }
+      
+      .items-table {
+        width: 90%;
+        border-collapse: collapse;
+        margin-top: 10px;
+      }
+      
+      .items-table th,
+      .items-table td {
+        border: 1px solid #eaeaea;
+        padding: 10px;
+        text-align: left;
+        font-size: 14px;
+      }
+      
+      .items-table th {
+        background-color: #f9f9f9;
+        font-weight: bold;
+      }
+      
+      .items-table td .item-detail {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+      
+      .item-thumbnail {
+        width: 40px;
+        height: 40px;
+        object-fit: cover;
+        border-radius: 4px;
+      }
+      
+      .item-code {
+        color: #888;
+        font-size: 12px;
+      }
+      
+      .totals {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 20px;
+        gap: 20px;
+      }
+      
+      .subtotal,
+      .total {
+        display: flex;
+        justify-content: space-between;
+        width: 200px;
+      }
+      
+      .total span:last-child {
+        font-weight: bold;
+        color: #007bff;
+      }
+      
+    .action-buttons {
+        display: flex;
+        justify-content: flex-end;
+        gap: 10px;
+    }
+    
+    .cancel-button, .draft-button, .submit-button {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    
+    .cancel-button {
+        background-color: #ccc;
+        color: black;
+    }
+    
+    .draft-button {
+        background-color: #f0ad4e;
+        color: white;
+    }
+    
+    .submit-button {
+        background-color: #007bff;
+        color: white;
+    }
+    
+
+    .terms-section {
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        padding: 20px;
+        border-radius: 5px;
+    }

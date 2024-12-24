@@ -1,0 +1,370 @@
+        /* General Container Styling */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            font-family: 'Arial', sans-serif;
+            border-radius: 8px;
+        
+        }
+        
+        /* Header Styling */
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #fff;
+            border-bottom: 1px solid #eaeaea;
+        }
+        
+        .header h1 {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        
+        .nav {
+            display: flex;
+            gap: 20px;
+        }
+        
+        .nav a {
+            text-decoration: none;
+            color: #007bff;
+            font-size: 14px;
+            font-weight: 500;
+        }
+        
+        .nav a.active {
+            color: #1a73e8;
+            font-weight: 600;
+            border-bottom: 2px solid #1a73e8;
+        }
+        
+        .search-bar-container {
+            flex: 1;
+        }
+        
+        .search-bar {
+            width: 100%;
+            max-width: 300px;
+            padding: 8px 12px;
+            font-size: 14px;
+            border: 1px solid #d1d1d1;
+            border-radius: 5px;
+        }
+        
+        .header-right {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        
+        .icon {
+            font-size: 18px;
+            color: #555;
+            cursor: pointer;
+        }
+        
+        .profile-image {
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            object-fit: cover;
+            cursor: pointer;
+        }
+        
+
+    /* Stepper Section */
+    .stepper {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 30px;
+        position: relative;
+    }
+    
+    .step {
+        text-align: center;
+        flex: 1;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    
+    .step span {
+        width: 30px;
+        height: 30px;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #cfd5dd;
+        color: #fff;
+        border-radius: 50%;
+        font-size: 14px;
+        font-weight: bold;
+    }
+    
+    .step-info {
+        font-weight: bold;
+    }
+    
+    .info-small {
+        font-weight: bold;
+        color: rgb(212, 210, 210);
+        font-size: 12px;
+    }
+    
+    .step.active span {
+        background-color: #007bff;
+    }
+    
+    .step::after {
+        content: '';
+        height: 2px;
+        background-color: white;
+        position: absolute;
+        top: 15px;
+        left: 0;
+        right: 0;
+        z-index: 0;
+    }
+
+    .progress-steps{
+        display: flex;
+        text-align: center;
+    }
+    
+    .step:first-child::after {
+        left: 50%;
+    }
+    
+    .step:last-child::after {
+        right: 50%;
+    }
+    
+        /* Form Styling */
+        .form-header {
+            font-size: 20px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 10px;
+        }
+        
+        .form-subtext {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .item-name{
+            margin-left: 3rem;
+        }
+
+        .items-table{
+            margin-left: 8rem;
+        }
+        
+        .form-main {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        
+        .form-row {
+            display: flex;
+            justify-content: space-between;
+            gap: 3rem;
+        }
+        
+        .form-group {
+            flex: 1;
+            margin-bottom: 20px;
+        }
+        
+        label {
+            display: block;
+            font-size: 14px;
+            font-weight: bold;
+            color: #555;
+            margin-bottom: 8px;
+        }
+        
+        input,
+        textarea,
+        select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 14px;
+            background-color: #f9f9f9;
+        }
+        
+        input[readonly] {
+            background-color: #f3f3f3;
+            color: #888;
+        }
+        
+        input:focus,
+        textarea:focus,
+        select:focus {
+            outline: none;
+            border-color: #1a73e8;
+        }
+        #item-name{
+            margin: auto;
+        }
+        textarea {
+            resize: none;
+            height: 100px;
+        }
+        
+        small.form-info {
+            font-size: 12px;
+            color: #888;
+            margin-top: 5px;
+            display: block;
+        }
+        
+        /* Table Styling */
+
+
+    .delete-btn{
+        border: none;
+        width: 4rem;
+    }
+
+    #note{
+        width: 35rem;
+        height: 12rem;
+    }
+
+    #amount{
+        width: 3rem;
+    }
+        #date{
+            width: 10rem;
+        }
+        #Price{
+            width: 4rem;
+        }
+
+        #td-table{
+            width: 18rem;
+        }
+        .wide-column {
+        width: rem;
+    }
+
+    .ed{
+        width: 13rem;
+    }
+
+    .ac{
+        width: 5rem;
+    }
+
+    .am{
+        width: 6rem;
+    }
+    .p{
+        width: 6rem;
+    }
+    .narrow-column {
+        width: 15rem;
+        margin-left: 1rem;
+    }
+
+
+        .table .remove {
+            color: #ff4d4f;
+            cursor: pointer;
+            text-align: center;
+        }
+        
+        /* Button Styling */
+        button {
+            padding: 20px 20px;
+            font-size: 14px;
+            font-weight: 600;
+            background-color:white ;
+            border: 2px solid rgb(188, 190, 194);
+            border-radius: .8rem;
+            cursor: pointer;
+        }
+
+        .button:hover{
+            border: 2px solid rgb(56, 134, 235);
+        }
+
+        .continue-btn{
+            width: 10rem;
+            color: blue;
+        }
+
+        .save-draft-btn{
+            width: 10rem;
+            color: blue;
+        }
+        .cancel-btn{
+            width: 10rem;
+        }
+
+        .save-draft-btn:hover{
+            color: white;
+            background-color: #007bff;
+        }
+        .continue-btn:hover{
+            color: white;
+            background-color: #007bff;
+        }
+        button.save {
+            background-color: #1a73e8;
+            color: #fff;
+            
+        }
+        
+        button.continue {
+            background-color: #007bff;
+            color: #fff;
+            margin-left: 10px;
+        }
+        
+        button.cancel {
+            background-color: #ddd;
+            color: #2c3e50;
+            width: 10rem;
+        }
+        
+        .form-actions{
+            display: flex;
+            gap:4rem;
+            justify-content: end;
+        }
+
+        button:hover {
+            opacity: 0.9;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .form-row {
+            flex-direction: column;
+            gap: 10px;
+            }
+        
+            .stepper {
+            flex-direction: column;
+            gap: 20px;
+            }
+        
+            header {
+            flex-direction: column;
+            align-items: flex-start;
+            }
+        
+            nav {
+            gap: 10px;
+            }
+        }
+        

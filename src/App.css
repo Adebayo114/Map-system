@@ -1,0 +1,21 @@
+/* General layout for the app */
+.app {
+    display: flex; /* Flex layout to place Sidebar and content side by side */
+  }
+  
+  /* Sidebar styles */
+  .sidebar {
+    width: 250px; /* Fixed width for Sidebar */
+    height: 100vh; /* Full height */
+    background-color: #f9faff; /* Background color for Sidebar */
+    border-right: 1px solid #eaeaea;
+    position: fixed; /* Keep Sidebar fixed on the left */
+  }
+  
+  /* Main content styles */
+  .main-content {
+    margin-left: 20rem; /* Offset to account for the Sidebar width */
+    flex-grow: 1; /* Main content takes the remaining space */
+    padding: 20px; /* Add padding for better spacing */
+  }
+  

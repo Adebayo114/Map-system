@@ -1,0 +1,190 @@
+    /* Stepper Section */
+    .stepper {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 30px;
+        position: relative;
+    }
+
+    .step {
+        text-align: center;
+        flex: 1;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .step span {
+        width: 30px;
+        height: 30px;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #1e67c7;
+        color: #fff;
+        border-radius: 50%;
+        font-size: 14px;
+        font-weight: bold;
+    }
+
+    .step-info {
+        font-weight: bold;
+    }
+
+    .info-small {
+        font-weight: bold;
+        color: rgb(212, 210, 210);
+        font-size: 12px;
+    }
+
+    .step.active span {
+        background-color: #00ff55;
+        color: rgb(19, 161, 19);
+    }
+
+    .step::after {
+        content: '';
+        height: 2px;
+        background-color: white;
+        position: absolute;
+        top: 15px;
+        left: 0;
+        right: 0;
+        z-index: 0;
+    }
+
+    .progress-steps{
+        display: flex;
+        text-align: center;
+    }
+
+    .step:first-child::after {
+        left: 50%;
+    }
+
+    .step:last-child::after {
+        right: 50%;
+    }
+
+
+    .quote-response-form {
+        max-width: 600px;
+        /* margin: ; */
+        font-family: Arial, sans-serif;
+    }
+    
+    h2 {
+        font-size: 1.5em;
+    }
+    
+    .form-mains{
+        display: flex;
+        gap: 2rem;
+        margin-left: 10rem;
+    }
+
+    .form-mains2{
+        display: flex;
+        gap: 2rem;
+        margin-left: 10rem;
+    }
+    .form-group {
+        margin-bottom: 1rem;
+        width: 50rem;
+    }
+    
+    .form-group2{
+        margin-bottom: 1rem;
+        width: 50rem;
+    }
+    
+    
+    label {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 0.5rem;
+    }
+    
+    select, input[type="number"], input[type="file"] {
+        width: 100%;
+        padding: 0.5rem;
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    .file-upload {
+        border: 1px dashed #ccc;
+        padding: 1rem;
+        text-align: center;
+    }
+    
+    .file-upload p {
+        margin: 0.5rem 0;
+        color: #888;
+    }
+    
+    .form-actions3 {
+        display: flex;
+        justify-content: flex-end; /* Align buttons to the right */
+        gap: 1rem; /* Add space between the buttons */
+        margin-top: 1.5rem; /* Add spacing above the buttons */
+    }
+    
+    button {
+        padding:1rem;
+        font-size: 1rem;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    
+    button[type="submit"] {
+        background-color: #007bff;
+        color: white;
+    }
+    
+    button[type="button"] {
+        background-color: #ccc;
+        color: black;
+    }
+
+    
+    .lead-time-group {
+        margin-bottom: 1rem;
+    }
+    
+    .lead-time-wrapper {
+        display: flex;
+        align-items: center;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        padding: 0.5rem;
+    }
+    
+    .lead-time-wrapper input[type="number"] {
+        border: none;
+        outline: none;
+        flex: 1;
+        font-size: 1rem;
+    }
+    
+    .lead-time-unit {
+        margin-left: 0.5rem;
+        font-size: 1rem;
+        color: #555;
+    }
+    
+
+    #shippingMethod{
+        width: 30rem;
+    }
+    #deliverySchedule{
+        width: 30rem;
+    }
+    #paymentTerms{
+        width: 30rem;
+    }
+    #leadTime{
+        width: 30rem;
+        padding: .1rem;
+    }
